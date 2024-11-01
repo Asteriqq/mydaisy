@@ -14,10 +14,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%);
             margin: 0;
-            overflow: hidden;
             font-family: 'Roboto', sans-serif;
             padding: 20px; /* Add padding for mobile */
         }
@@ -27,21 +26,25 @@
             animation: fadeIn 2s ease-in-out;
             max-width: 600px; /* Set a max width for larger screens */
             width: 100%; /* Full width on smaller screens */
+            padding: 20px; /* Add padding for content */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
         }
 
         h1 {
-            font-size: 2.5rem;
-            color: #fff;
+            font-size: 2.2rem; /* Slightly smaller font size */
+            color: #ff6f61;
             margin-bottom: 20px;
         }
 
         .love-letter {
             margin: 20px 0;
-            color: #fff;
+            color: #333; /* Darker text for better contrast */
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            font-size: 1.1rem; /* Slightly larger font size */
+            font-size: 1rem; /* Responsive font size */
         }
 
         .video-container {
@@ -55,10 +58,10 @@
         }
 
         button {
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-size: 1rem;
-            background-color: #fff;
-            color: #ff6f61;
+            background-color: #ff6f61;
+            color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -78,7 +81,7 @@
 <body>
     <div class="container">
         <h1>Raheem Temitope Hephzibah</h1>
-        <p>Would you be mine without question? &#x1F60D;</p>
+        <p>Would you be mine without question? 😍</p>
         <div class="love-letter">
             <p>I was just remembering the day we met and lost myself in the memory lane of our relationship. It hit me again today how crazy I am about you and how much I love you. There isn’t anything in the world I wouldn’t do for you and if there is, I don’t want to know about it.</p>
             <p>You have become the most important person in my life, and I can’t thank my stars enough for having a caring, modest, and good-hearted partner.</p>
@@ -90,7 +93,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-        <button onclick="showPopup()">Yes, I will!</button>
+        <button onclick="showPopup()" aria-label="Confirm relationship">Yes, I will!</button>
     </div>
 
     <script>
